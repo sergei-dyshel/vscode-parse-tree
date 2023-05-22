@@ -86,14 +86,15 @@
     "eslint": "^8.13.0",
     "eslint-config-prettier": "^8.5.0",
     "electron-rebuild": "^2.3.5",
+    "node-gyp": "^9.3.1",
     "tree-sitter-agda": "github:pokey/tree-sitter-agda#e5fba6cabe8c7fc7993ced2b86704f3841215284",
     "tree-sitter-bash": "^0.19.0",
-    "tree-sitter-c": "^0.19.0",
+    "tree-sitter-c": "github:tree-sitter/tree-sitter-c#cac392a",
     "tree-sitter-css": "^0.19.0",
     "tree-sitter-c-sharp": "^0.19.0",
     "tree-sitter-cli": "^0.20.1",
     "tree-sitter-clojure": "github:sogaiu/tree-sitter-clojure#master",
-    "tree-sitter-cpp": "^0.19.0",
+    "tree-sitter-cpp": "github:tree-sitter/tree-sitter-cpp#70aed2e",
     "@elm-tooling/tree-sitter-elm": "github:elm-tooling/tree-sitter-elm#0aecfbf69f0c9bcdfada0f6f2c5398235c23949f",
     "tree-sitter-go": "github:tree-sitter/tree-sitter-go#64457ea6b73ef5422ed1687178d4545c3e91334a",
     "tree-sitter-elixir": "github:elixir-lang/tree-sitter-elixir#b20eaa75565243c50be5e35e253d8beb58f45d56",
@@ -126,7 +127,13 @@
   "dependencies": {
     "jsonc-parser": "^2.1.0",
     "tar": ">=4.4.2",
-    "web-tree-sitter": "file:vendor/web-tree-sitter/0.20.4"
+    "web-tree-sitter": "file:vendor/web-tree-sitter/0.20.8"
+  },
+  "overrides": {
+    "node-gyp": "^9.3.1"
+  },
+  "resolutions": {
+    "node-gyp": "^9.3.1"
   },
   "bundledDependencies": [
     "web-tree-sitter"
